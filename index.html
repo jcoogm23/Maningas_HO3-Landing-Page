@@ -1,0 +1,290 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>J'COS Restaurant</title>
+</head>
+<body>
+    
+    <div class="sidebar">
+        
+        <h1 class="logo"> <img src="my logo.png"  alt="J'COS Restaurant Logo">
+             Welcome to J'COS! TASTE THE NO LIKE OTHERS MENU!</h1>
+        
+        <div class="sidebar-menus">
+            <a href="index.html"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>About Us</a>
+            <a href="#"><ion-icon name="reorder-four-outline"></ion-icon>Order</a>
+            <a href="#"><ion-icon name="cube-outline"></ion-icon>Gallery</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>09999768797</p>
+                <p>jericomaningas3@gmail.com</p>
+            </div>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+            <a href="#"><ion-icon name="sparkles-outline"></ion-icon>Terms and Condition</a> 
+            <a href="#"><ion-icon name="skull-outline"></ion-icon>Feedback</a>
+            
+<div class="social-media-icons">
+    <a href="https://www.facebook.com/share/szHFkwdGsEJbxUD9/?mibextid=qi2Omg" class="icon-link"><ion-icon name="logo-facebook"></ion-icon alt="Facebook">Facebook</a>
+    <a href="https://x.com/Jerico_Powgs?t=OisIBrA4iJxsN2l2Vw0cNg&s=09" class="icon-link"><ion-icon name="logo-twitter"></ion-icon alt="Twitter">Twitter</a>
+    <a href="https://www.instagram.com/yourinstagram" class="icon-link"><ion-icon name="logo-instagram"></ion-icon alt="Instagram">Instagram</a>
+
+</div>
+        </div>
+        
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="main-navbar">
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="Select a Menu">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="profile">
+                <a class="cart" href="#" onclick="toggleCartPopup()">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <a class="user" href="#"><ion-icon name="person-outline"></ion-icon> </a>             
+            </div>
+        </div>
+
+          <div id="cart-popup" class="cart-popup">
+            <h4>Add To Cart</h4>
+            <table id="cart-items">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>#</th>
+                        <th>Price(₱)</th>
+                        <th>Total(₱)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p>Total($) <span id="cart-total">0.00</span></p>
+            <a class="cart-close" onclick="closeCart()"><ion-icon name="close-circle-outline"></ion-icon></a>
+          </div>
+
+
+         <div class="main-highlight">
+            <div class="carousel">
+                <div class="slide"><img class="highlight-img" src="wings.jpg"><div class="highlight-desc"><h4>Chicken Wings</h4><p>₱250</p></div></div>
+                <div class="slide"><img class="highlight-img" src="adobo.jpg"><div class="highlight-desc"><h4>Chicken Adobo</h4><p>₱70</p></div></div>
+                <div class="slide"><img class="highlight-img" src="steak.jpg"><div class="highlight-desc"><h4>Monster Steak</h4><p>₱390</p></div></div>
+                <div class="slide"><img class="highlight-img" src="burrito.jpg"><div class="highlight-desc"><h4>Burrito</h4><p>₱150</p></div></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        
+        <div class="main-highlight">
+            <div class="main-header">
+                <h2 class="main-title">J'COS Menu</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+                <div class="highlight-wrapper">
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="wings.jpg">
+                        <div class="highlight-desc">
+                            <h4>Chicken Wings</h4>
+                            <p>₱250</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="adobo.jpg">
+                        <div class="highlight-desc">
+                            <h4>Chicken Adobo</h4>
+                            <p>₱70</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="steak.jpg">
+                        <div class="highlight-desc">
+                            <h4>Monster Steak</h4>
+                            <p>₱390</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="burrito.jpg">
+                        <div class="highlight-desc">
+                            <h4>Burrito</h4>
+                            <p>₱150</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menus">
+            <div class="main-filter">
+                <div>
+                    <h2 class="main-title">Menu <br>Category</h2>
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>List of All Menus</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="beer-outline"></ion-icon>
+                        </div>
+                        <p>Fruit Soda</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>Seafood</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Ice Cream</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pizza-outline"></ion-icon>
+                        </div>
+                        <p>Super Supreme</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Milktea</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Monster Burger</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="main-detail">
+                <h2 class="main-title">Choose Your Order</h2>
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <img class="detail-img" src="ginataang crab.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Ginataang Alimango</h4>
+                                <p class="detail-sub"></p>
+                                <p class="price">₱630</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Ginataang Alimango', 630)">Add to Cart</button>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>                    
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="burrito.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Burrito</h4>
+                                <p class="detail-sub"></p>
+                                <p class="price">₱150</p>
+                                <button class="add-to-cart-btn" onclick="addToCart('Burrito', 150)">Add to Cart</button>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="burger.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Monster Burger</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱70</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Monster Burger', 70)">Add to Cart</button>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="fruit soda.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Fruit Soda</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱65</p>
+                            <button class="add-to-cart-btn" onclick="addToCart('Fruit Soda', 65)">Add to Cart</button>
+                     </div>
+                     <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="milktea.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Milktea</h4>
+                        <p class="detail-sub"></p>
+                        <p class="price">₱95</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Milktea', 95)">Add to Cart</button>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="leche flan.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Premium Leche Flan</h4>
+                        <p class="detail-sub"></p>
+                        <p class="price">₱120</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Premium Leche Flan', 120)">Add to Cart</button>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="salad.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                    <h4>Vegetarian Macaroni Salad</h4>
+                    <p class="detail-sub"></p>
+                    <p class="price">₱350</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Vegetarian Macaroni Salad', 350)">Add to Cart</button>
+                </div>
+                <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="detail-card">
+            <img class="detail-img" src="ice cream.jpg">
+            <div class="detail-desc">
+                <div class="detail-name">
+                    <h4>Ice Cream</h4>
+                    <p class="detail-sub"></p>
+                    <p class="price">₱80</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Ice Cream', 80)">Add to Cart</button>
+                </div>
+                <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app.js"></script>
+</html>
